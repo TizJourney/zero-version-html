@@ -1,0 +1,108 @@
+/* это блок для отладки положения блоков */
+div, h1, h2, h3, h4, ul, li, p {  border: 1px solid red;}
+
+
+.root {
+  /* зададим размеры страницы жёстко пока не умеют в адаптивную вёрстку */
+  min-width: 1100px;
+  max-width: 1600px;
+
+  /* обнулим границы */
+  margin: 0 auto;
+  /* один раз на всю страницу выставим шрифты */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  /* размеры для блоков всегда будем задавать с учётом ограниц */
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.header__title {
+  width: 60%;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+}
+
+.first-section {
+  min-height: 400px;
+  background-color: lightsteelblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.first-section__title {
+  width: 60%;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.first-section__content {
+  width: 80%;
+  min-height: 300px;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+
+.second-section {
+  min-height: 400px;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.second-section__title {
+  width: 60%;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.second-section__content {
+  width: 80%;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  min-height: 300px;
+}
+
+.footer {
+  min-height: 200px;
+  background-color:lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer__content {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0;
+}
